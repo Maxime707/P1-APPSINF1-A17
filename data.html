@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<!-- Here starts the Extendable Page -->
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    </head>
+    <body class="background-blue-3">
+        <nav>
+            <header>
+                <div class="title-grid-container">
+                    <div class="divingrid background-blue-1"> 
+                        <div class="divingrid left-align">
+                            Incidents et Signalements
+                        </div>
+                        <!---div class="divingrid right-align">
+                            <img src="logo.jpg" alt="logo" width="90vh">
+                        </div--->
+                    </div>
+                    <div class="divingrid background-blue-2">
+                        <input type="search"
+                        spellcheck="true"
+                        id="incident"
+                        name="incident"
+                        placeholder="Incident à signaler"*
+                        class="searchbarsize">
+                        <button class="buttonsize">Search</button>
+                    </div>
+                    <div class="divingrid background-blue-3">
+                        <button>Login<!-- {{username}} et menu déroulant else Login et redirect --></button>
+                    </div>
+                </div>
+            </header>
+        </nav>
+        <div class="one-page background-white"> <!-- Here is LOGIN-->
+        <table id="mytable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Adresse</th>
+                    <th>Rapporté Par</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>m</td>
+                    <td>m</td>
+                    <td>m</td>
+                    <td>m</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <div class="background-blue-3"></div>
+        </div>
+    </body>
+
+<script type="text/javascript">
+        $(document).ready(function() {
+        $('#mytable').DataTable({
+              language: {
+                search: "Rechercher :",
+                lengthMenu: "Afficher _MENU_ entrées",
+                info: "Affichage de _START_ à _END_ sur _TOTAL_ entrées",
+                paginate: {
+                first: "Première",
+                last: "Dernière",
+                next: "Suivante",
+                previous: "Précédente"
+                }
+              }
+        });
+    });
+</script>
+</html>
