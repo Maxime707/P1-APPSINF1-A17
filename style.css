@@ -75,69 +75,94 @@ nav .toggle-btn{
 
 /*------------------------*/
 .dataTables_filter label  {
-    color: hsl(228, 42%, 95%) !important; 
-    font-size: 30px;
-    padding-top: 20px;
+    color:  #ffffff !important; 
+    background-color:  #9CB7D4;
+    font-size: 0.6vw;
+    border-radius: 1.4vh;
+    margin-bottom: 0.8vh;
+    margin-top:0.6;
 }
 
 .dataTables_length label {
-    margin-left:10px;
-    border:solid 2.5px;
-    padding : 20px;
-
+    margin-top:auto;
+    margin-left: 3vw;
+    border: solid 0.7vh #ffffff;
+    padding : 2vh;
+    background-color:#5DB3E6;
+    font-size:2vh !important;
+    border-radius:10vh;
 }
 
 .dataTables_length select {
-    border : solid 4px;
-    padding : 20px;
+    border : solid 1vw;
+    padding : 3vh;
+    font-size: 2vh !important;
+    border-radius:1vh !important;
 }
 
 .dataTables_filter label {
-    border : solid 4px;
-    margin-top:25px;
-    margin-right:20px;
-    border-radius:15px;
-    padding : 20px;
+    border : solid 0.3vw;
+    margin-top:5vh;
+    margin-right:4vh;
+    border-radius:3vh;
+    padding : 3vh;
     font-style: bold;
-    padding-top:15px;
-    padding-bottom:20px;
+    font-size:1vw;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    color:#ffffff !important;
 }
 
 .dataTables_filter label input {
-    margin-top: 35px;
-    border : solid 4px;
-    border-radius:10px;
-    padding : 20px;
-    font-size: 20px;
+    margin-top: 5.3vh;
+    border : solid 0.8vw white;
+    border-radius: 3vh;
+    padding-top : 3vh;
+    padding-bottom : 1.5vh;
+    font-size : 2vh !important;
+    color:rgb(255, 255, 255);
 }
 
 .dataTables_length label, .dataTables_length select {
-    color: hsl(228, 42%, 95%) !important; 
-    margin-bottom: 40px; 
-    font-size: 25px;
-    margin-top: 35px;
+    color: rgb(222, 222, 222) !important; 
+    margin-bottom: 5vh; 
+    font-size: 3vh;
+    margin-top: 5vh;
 }
 
-.dataTables_paginate, .paginate_button {
+.paginate_button {
+    padding-top:0.5vh;
+    font-size:2.1vh !important;
+    display: flex center;
+    margin-right:21.25vw;
+    padding:1.3vh 1.3vw !important;
+}
+
+.dataTables_paginate  {
     color:#ffffff !important;
-    font-style: bold;
-    padding-top:15px !important;
-    padding-bottom:15px !important;
-    font-size:larger !important;
+    font-size:1vh !important;
+    font-display: center ;
+    display: flex 1vh !important;
+    padding-top:0.1vh !important;
+    background-color: #5DB3E6 !important;
+    border:solid 0.33vw white;
+    width:99.5%;
 }
 
 .dataTables_info {
   color: #ffffff !important;          
   font-weight: italic;      
-  font-size: 20px;  
-  padding-left:15px;
-  border: solid 2.5px;
-  margin-top : 15px;
-  margin-left:10px;
-  padding-right:15px;
-  padding-bottom:14px !important;
-  padding-top:15px !important;
-  border-radius:25px;
+  font-size: 1.7vh !important;  
+  padding-left:2vh;
+  border: solid 0.6vh;
+  margin-top : 1vh;
+  margin-left : 43vw ;
+  margin-bottom:2vh;
+  padding-right:2vh;
+  padding-bottom:2vh !important;
+  padding-top:1.8vh !important;
+  border-radius:2.6vh;
+  background-color: #9CB7D4;
 }
 
 table.dataTable {
@@ -146,11 +171,11 @@ table.dataTable {
   height:auto !important;
   color:#000000 !important;
   background-color: white !important;
-  border-width: 4px;
+  border-width: 0.6vh;
   border-color: #00214E;
   border-style: solid;
-  font-size: 20px;
-  padding-bottom:200px;
+  font-size: 0.9vw;
+  padding-bottom:28vh;
 }
 
 th, td {
@@ -158,7 +183,7 @@ th, td {
     padding: 10px;
     text-align: center !important;
     border-width: 2px;
-    font-size: 20px;
+    font-size: 2.3vh !important;
 }
 
 .title-grid-container {
@@ -268,12 +293,8 @@ header{
     margin-top: 1vh;
     margin-bottom: 1vh;
     display: grid;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 20vw 30vw;
     row-gap: 1vh;
-    justify-items: center;
-}
-.searchbarform {
-    width: 40vw;
 }
 .divformtitle {
     border: white;
