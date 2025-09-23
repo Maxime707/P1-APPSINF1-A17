@@ -6,113 +6,146 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="background-blue-3">
-        <nav>
-            <header>
-                <div class="title-grid-container">
-                    <div class="divingrid background-blue-1"> 
-                        <div class="divingrid left-align">
-                            Title
-                        </div>
-                        <!---div class="divingrid right-align">
-                            <img src="logo.jpg" alt="logo" width="90vh">
-                        </div--->
-                    </div>
-                    <div class="divingrid background-blue-2">
-                        <input type="search"
-                        spellcheck="true"
-                        id="incident"
-                        name="incident"
-                        placeholder="Incident Query..."*
-                        class="searchbarsize">
-                        <button class="buttonsize">Search</button>
-                    </div>
-                    <div class="divingrid background-blue-3">
-                        <button>Login<!-- {{username}} et menu déroulant else Login et redirect --></button>
-                    </div>
+        <header>
+            <nav>
+                <div class="logo-title">
+                    <img src="./signac-high-resolution-logo-transparent.png">
                 </div>
-            </header>
-        </nav>
-<!-- Here ends the Extendable Page -->
-<!-- Here is Login -->
-        <div class="one-page background-white">
-            <div class="background-blue-3">
-                <div class="page-title-container">
-                    Login Page
-                </div>
-                <div class="title-container background-blue-1">Sign in</div>
-                    <div class="divform">
-                        <div class="divformtitle">
-                            Username
+                <ul class="na">
+                    <li>
+                        <div class="divingrid background-blue-1"> 
+                            <div class="divingrid left-align">
+                                Incidents et Signalements
+                            </div>
+                            <!---div class="divingrid right-align">
+                                <img src="logo.jpg" alt="logo" width="90vh">
+                            </div--->
                         </div>
+                    </li>
+                    <li>
+                        <div class="divingrid background-blue-2">
+                            <input type="search"
+                            spellcheck="true"
+                            id="incident"
+                            name="incident"
+                            placeholder="Incident à signaler"*
+                            class="searchbarsize">
+                            <button class="buttonsize">Search</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divingrid background-blue-3">
+                            <button>Login<!-- {{username}} et menu déroulant else Login et redirect --></button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+                <div class="one-page background-white">
+                <div class="background-blue-3">
+                    <div class="page-title-container">
+                        Login Page
+                    </div>
+                    <div class="title-container background-blue-1">Sign in</div>
+                        <form method="post">
+                            <div>
+                                <label for="username" class="divformtitle">
+                                    Username
+                                </label>
+                                <input type="search"
+                                spellcheck="true"
+                                id="Usernew"
+                                name="Usernew"
+                                class="searchbarform">
+                            </div>
+                            <div>
+                                <label for="password" class="divformtitle">
+                                    Password
+                                </label>
+                                <input type="search"
+                                spellcheck="true"
+                                id="Passnew"
+                                name="Passnew"
+                                class="searchbarform">
+                            </div>
+                            <button type="submit">Login</button>
+                        </form>
+                    <div class="title-container background-blue-2">Sign up</div>
+                    <form method="post">  
                         <div>
+                            <label for="username">
+                                Username
+                            </label>  
                             <input type="search"
                             spellcheck="true"
                             id="Usernew"
                             name="Usernew"
                             class="searchbarform">
                         </div>
-                        <div class="divformtitle">
-                            Password
-                        </div>
                         <div>
+                            <label for="password" class="divformtitle">
+                                Password
+                            </label>
                             <input type="search"
                             spellcheck="true"
                             id="Passnew"
                             name="Passnew"
                             class="searchbarform">
                         </div>
-                    </div>
-                    <div class="central-button">
-                        <button>Login</button>
-                    </div>
-                <div class="title-container background-blue-2">Sign up</div>
-                <div class="divform">
-                    <div class="divformtitle">
-                        Username
-                    </div>    
-                    <div>
-                        <input type="search"
-                        spellcheck="true"
-                        id="Usernew"
-                        name="Usernew"
-                        class="searchbarform">
-                    </div>
-                    <div class="divformtitle">
-                        Password
-                    </div>
-                    <div>
-                        <input type="search"
-                        spellcheck="true"
-                        id="Passnew"
-                        name="Passnew"
-                        class="searchbarform">
-                    </div>
-                    <div class="divformtitle">
-                        Full Name
-                    </div>
-                    <div>
-                        <input type="search"
-                        spellcheck="true"
-                        id="Namenew"
-                        name="Namenew"
-                        class="searchbarform">
-                    </div>
-                    <div class="divformtitle">
-                        Email
-                    </div>
-                    <div>
-                        <input type="search"
-                        spellcheck="true"
-                        id="Adressnew"
-                        name="Adressnew"
-                        class="searchbarform">
-                    </div>
-                </div>
-                <div class="central-button">
-                    <button>Register</button>
+                        <div>
+                            <label for="fullname" class="divformtitle">
+                                Full Name
+                            </label>
+                            <input type="search"
+                            spellcheck="true"
+                            id="Namenew"
+                            name="Namenew"
+                            class="searchbarform">
+                        </div>
+                        <div>
+                            <label for="email" class="divformtitle">
+                                Email
+                            </label>
+                            <input type="search"
+                            spellcheck="true"
+                            id="Adressnew"
+                            name="Adressnew"
+                            class="searchbarform">
+                        </div>
+                        <button type="submit">Register</button>
+                    </form>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <div>
+                <h6>Term | Privacy</h6>
+                <ul>
+                    <li>Declaration de Confidentialité</li>
+                    <li>Conditions générales</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <h6>Follow</h6>
+                <ul>
+                    <li>facebook</li>
+                    <li>Instagram</li>
+                    <li>twiter</li>
+                    <li>twiter</li>
+                    <li>youtube</li>
+                    <li>Linkdin</li>
+                </ul>
+            </div>
+            <div>
+                <h6>Contact</h6>
+                <ul>
+                    <li>incident_alert@info.be</li>
+                    <li>+32 485 34 12 34</li>
+                </ul>
+            </div>
+        </footer>
 <!-- Here be Dragons -->
     </body>
 </html>
