@@ -2,85 +2,77 @@
 <html lang="fr-FR">
 <!-- Here starts the Extendable Page -->
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--link for font-awesome feature-->>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
     </head>
     <body class="background-blue-3">
-        <header>
-            <nav>
-                <div class="logo">
-                </div>
-                <ul class="links">
-                    <li>
-                        <div class="divingrid background-blue-2">
-                            <input type="search"
-                            spellcheck="true"
-                            id="research"
-                            name="research"
-                            placeholder="research"
-                            class="searchbarsize">
-                            <button class="buttonsize">Search</button>
+        <nav>
+            <header>
+                <div class="title-grid-container">
+                    <div class="divingrid background-blue-1"> 
+                        <div class="divingrid left-align">
+                            Incidents et Signalements
                         </div>
-                    </li>
-                </ul>
-                <a class="action-btn" href="./login.html">Login</a>
-                <div class="toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
+                        <!---div class="divingrid right-align">
+                            <img src="logo.jpg" alt="logo" width="90vh">
+                        </div--->
+                    </div>
+                    <div class="divingrid background-blue-2">
+                        <input type="search"
+                        spellcheck="true"
+                        id="incident"
+                        name="incident"
+                        placeholder="Incident à signaler"*
+                        class="searchbarsize">
+                        <button class="buttonsize">Search</button>
+                    </div>
+                    <div class="divingrid background-blue-3">
+                        <button>Login<!-- {{username}} et menu déroulant else Login et redirect --></button>
+                    </div>
                 </div>
-            </nav>
-        </header>
-        <main class="one-page background-white"> <!-- Here is LOGIN-->
-            <table id="mytable">
-                <thead>
-                    <tr>
-                        <th>Description</th>
-                        <th>Adresse</th>
-                        <th>Rapporté Par</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>m</td>
-                        <td>m</td>
-                        <td>m</td>
-                        <td>m</td>
-                    </tr>
-                </tbody>
-            </table>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-            <div class="background-blue-3"></div>
-        </main>
-        <footer>
-            <div>
-                <h6>Term | Privacy</h6>
-                <ul>
-                    <li>Declaration de Confidentialité</li>
-                    <li>Conditions générales</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
-            <div>
-                <h6>Follow</h6>
-                <ul>
-                    <li>facebook</li>
-                    <li>Instagram</li>
-                    <li>twiter</li>
-                    <li>twiter</li>
-                    <li>youtube</li>
-                    <li>Linkdin</li>
-                </ul>
-            </div>
-            <div>
-                <h6>Contact</h6>
-                <ul>
-                    <li>incident_alert@info.be</li>
-                    <li>+32 485 34 12 34</li>
-                </ul>
-            </div>
-        </footer>
+            </header>
+        </nav>
+        <div class="one-page background-white"> <!-- Here is LOGIN-->
+        <table id="mytable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Adresse</th>
+                    <th>Rapporté Par</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>m</td>
+                    <td>m</td>
+                    <td>m</td>
+                    <td>m</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <div class="background-blue-3"></div>
+        </div>
     </body>
+
+<script type="text/javascript">
+        $(document).ready(function() {
+        $('#mytable').DataTable({
+              language: {
+                search: "Rechercher :",
+                lengthMenu: "Afficher _MENU_ entrées",
+                info: "Affichage de _START_ à _END_ sur _TOTAL_ entrées",
+                paginate: {
+                first: "Première",
+                last: "Dernière",
+                next: "Suivante",
+                previous: "Précédente"
+                }
+              }
+        });
+    });
+</script>
 </html>
