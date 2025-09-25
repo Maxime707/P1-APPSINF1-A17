@@ -2,34 +2,61 @@
 <html lang="fr-FR">
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     </head>
     <body class="background-blue-3">
-        <nav>
-            <header>
-                <div class="title-grid-container">
-                    <div class="divingrid background-blue-1"> 
-                        <div class="divingrid left-align">
-                            Title
-                        </div>
-                        <!---div class="divingrid right-align">
-                            <img src="logo.jpg" alt="logo" width="90vh">
-                        </div--->
-                    </div>
-                    <div class="divingrid background-blue-2">
-                        <input type="search"
-                        spellcheck="true"
-                        id="incident"
-                        name="incident"
-                        placeholder="Incident Query..."*
-                        class="searchbarsize">
-                        <button class="buttonsize">Search</button>
-                    </div>
-                    <div class="divingrid background-blue-3">
-                        <button>Login<!-- {{username}} et menu déroulant else Login et redirect --></button>
-                    </div>
+        <header>
+            <div class="nav-break">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./signac-high-resolution-logo-transparent.png">
+                    </a>
                 </div>
-            </header>
-        </nav>
-        <!-- Extend from here !!!-->
+                <div>
+                    <a class="action-btn" href="./login.html">Login</a>
+                    <a class="action-btn" href="./login.html">Register</a>
+                </div>
+                <div class="profile">
+                    <div class="photo">
+                        <img class="photo-image" src="./Unknown_person.jpg">
+                    </div>
+                    <p>Paul Pilulu</p>
+                </div>
+            </div>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./signac-high-resolution-logo-transparent.png">
+                    </a>
+                </div>
+                <ul class="links">
+                    <li>
+                        <form>
+                            <div class="search">
+                                <span class="search-icon material-symbols-outlined">search</span>
+                                <input type="search"
+                                    spellcheck="true"
+                                    id="search"
+                                    name="search"
+                                    placeholder="Search"
+                                    class="search-input">
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div>
+                    <a class="action-btn" href="./login.html">Login</a>
+                    <a class="action-btn" href="./login.html">Register</a>
+                </div>
+                <div class="profile">
+                    <div class="photo">
+                        <img class="photo-image" src="./Unknown_person.jpg">
+                    </div>
+                    <div>Paul Pilulu</div>
+                </div>
+            </nav>
+        </header>
     </body>
 </html>

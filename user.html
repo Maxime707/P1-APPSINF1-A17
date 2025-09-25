@@ -5,40 +5,52 @@
         <link rel="stylesheet" href="profile.css">
         <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     </head>
     <body>
         <header>
-            <nav>
-                <div class="logo-title">
+            <div class="nav-break">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./signac-high-resolution-logo-transparent.png">
+                    </a>
                 </div>
-                <ul class="na">
+                <div class="profile">
+                    <div class="photo">
+                        <img class="photo-image" src="./Unknown_person.jpg">
+                    </div>
+                    <div>Paul Pilulu</div>
+                </div>
+            </div>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./signac-high-resolution-logo-transparent.png">
+                    </a>
+                </div>
+                <ul class="links">
                     <li>
-                        <div class="divingrid background-blue-1"> 
-                            <div class="divingrid left-align">
-                                Incidents et Signalements
+                        <form>
+                            <div class="search">
+                                <span class="search-icon material-symbols-outlined">search</span>
+                                <input type="search"
+                                    spellcheck="true"
+                                    id="search"
+                                    name="search"
+                                    placeholder="Search"
+                                    class="search-input">
                             </div>
-                            <!---div class="divingrid right-align">
-                                <img src="logo.jpg" alt="logo" width="90vh">
-                            </div--->
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divingrid background-blue-2">
-                            <input type="search"
-                            spellcheck="true"
-                            id="incident"
-                            name="incident"
-                            placeholder="Incident à signaler"*
-                            class="searchbarsize">
-                            <button class="buttonsize">Search</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divingrid background-blue-3">
-                            <button>Login<!-- {{username}} et menu déroulant else Login et redirect --></button>
-                        </div>
+                        </form>
                     </li>
                 </ul>
+                <div class="profile">
+                    <div class="photo">
+                        <img class="photo-image" src="./Unknown_person.jpg">
+                    </div>
+                    <div>Paul Pilulu</div>
+                </div>
             </nav>
         </header>
         <main>

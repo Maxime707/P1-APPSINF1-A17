@@ -6,80 +6,114 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     </head>
-    <body class="background-blue-3">
+    <body>
         <header>
+            <div class="nav-break">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./signac-high-resolution-logo-transparent.png">
+                    </a>
+                </div>
+                <div class="profile">
+                    <div class="photo">
+                        <img class="photo-image" src="./Unknown_person.jpg">
+                    </div>
+                    <div>Paul Pilulu</div>
+                </div>
+            </div>
             <nav>
                 <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./signac-high-resolution-logo-transparent.png">
+                    </a>
                 </div>
                 <ul class="links">
                     <li>
-                        <div class="divingrid background-blue-2">
-                            <input type="search"
-                            spellcheck="true"
-                            id="research"
-                            name="research"
-                            placeholder="research"
-                            class="searchbarsize">
-                            <button class="buttonsize">Search</button>
-                        </div>
+                        <form>
+                            <div class="search">
+                                <span class="search-icon material-symbols-outlined">search</span>
+                                <input type="search"
+                                    spellcheck="true"
+                                    id="search"
+                                    name="search"
+                                    placeholder="Search"
+                                    class="search-input">
+                            </div>
+                        </form>
                     </li>
                 </ul>
-                <a class="action-btn" href="./login.html">Login</a>
-                <div class="toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="profile">
+                    <div class="photo">
+                        <img class="photo-image" src="./Unknown_person.jpg">
+                    </div>
+                    <div>Paul Pilulu</div>
                 </div>
             </nav>
         </header>
-        <main class="one-page background-white"> <!-- Here is LOGIN-->
-            <table id="mytable">
-                <thead>
-                    <tr>
-                        <th>Description</th>
-                        <th>Adresse</th>
-                        <th>Rapporté Par</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>m</td>
-                        <td>m</td>
-                        <td>m</td>
-                        <td>m</td>
-                    </tr>
-                </tbody>
-            </table>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-            <div class="background-blue-3"></div>
+        <main><!-- Here is LOGIN-->
+            <div class="table">
+                <div class="table-header">
+                    <div>
+                        <a href="./signal.html">
+                            <i class="fa-solid fa-plus"></i>
+                            <p>add new</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-section">
+                <table id="mytable">
+                    <thead>
+                        <tr>
+                            <th>Rapporté Par</th>
+                            <th>Description</th>
+                            <th>Adresse</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>m</td>
+                            <td>m</td>
+                            <td>m</td>
+                            <td>m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <div><i class="fa-solid fa-angles-left"></i></div>
+                <div><i class="fa-solid fa-angle-left"></i></div>
+                <div>1</div>
+                <div>2</div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+                <div><i class="fa-solid fa-angles-right"></i></div>
+            </div>
         </main>
         <footer>
             <div>
-                <h6>Term | Privacy</h6>
+                <h3>Term | Privacy</h3>
                 <ul>
-                    <li>Declaration de Confidentialité</li>
-                    <li>Conditions générales</li>
-                    <li>FAQ</li>
+                    <li><a>Declaration de Confidentialité</a></li>
+                    <li><a>Conditions générales</a></li>
+                    <li><a>FAQ</a></li>
                 </ul>
             </div>
             <div>
-                <h6>Follow</h6>
-                <ul>
-                    <li>facebook</li>
-                    <li>Instagram</li>
-                    <li>twiter</li>
-                    <li>twiter</li>
-                    <li>youtube</li>
-                    <li>Linkdin</li>
-                </ul>
+                <h3><a><i class="fa-solid fa-envelope"></i> Contact Us</a></h3>
             </div>
             <div>
-                <h6>Contact</h6>
-                <ul>
-                    <li>incident_alert@info.be</li>
-                    <li>+32 485 34 12 34</li>
-                </ul>
+                <h3>Follow Us</h3>
+                <div class="pagination">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-x-twitter"></i></div>
+                    <div><i class="fa-brands fa-tiktok"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                </div>
             </div>
         </footer>
     </body>
