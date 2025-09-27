@@ -4,6 +4,7 @@
 <!-- Here starts the Extendable Page -->
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--link for font-awesome feature-->>
         <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
@@ -53,108 +54,52 @@
             </nav>
         </header>
         <main>
-                <div class="one-page background-white">
-                <div class="background-blue-3">
-                    <div class="page-title-container">
-                        Login Page
+            <div class="login-box">
+                <form>
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label for="username">Username</label>
                     </div>
-                    <div class="title-container background-blue-1">Sign in</div>
-                        <form method="post">
-                            <div>
-                                <label for="username" class="divformtitle">
-                                    Username
-                                </label>
-                                <input type="search"
-                                spellcheck="true"
-                                id="Usernew"
-                                name="Usernew"
-                                class="searchbarform">
-                            </div>
-                            <div>
-                                <label for="password" class="divformtitle">
-                                    Password
-                                </label>
-                                <input type="search"
-                                spellcheck="true"
-                                id="Passnew"
-                                name="Passnew"
-                                class="searchbarform">
-                            </div>
-                            <button type="submit">Login</button>
-                        </form>
-                    <div class="title-container background-blue-2">Sign up</div>
-                    <form method="post">  
-                        <div>
-                            <label for="username">
-                                Username
-                            </label>  
-                            <input type="search"
-                            spellcheck="true"
-                            id="Usernew"
-                            name="Usernew"
-                            class="searchbarform">
-                        </div>
-                        <div>
-                            <label for="password" class="divformtitle">
-                                Password
-                            </label>
-                            <input type="search"
-                            spellcheck="true"
-                            id="Passnew"
-                            name="Passnew"
-                            class="searchbarform">
-                        </div>
-                        <div>
-                            <label for="fullname" class="divformtitle">
-                                Full Name
-                            </label>
-                            <input type="search"
-                            spellcheck="true"
-                            id="Namenew"
-                            name="Namenew"
-                            class="searchbarform">
-                        </div>
-                        <div>
-                            <label for="email" class="divformtitle">
-                                Email
-                            </label>
-                            <input type="search"
-                            spellcheck="true"
-                            id="Adressnew"
-                            name="Adressnew"
-                            class="searchbarform">
-                        </div>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <button class="button-login" type="submit">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account ? <a href="./register.html">Register</a></p>
+                    </div>
+                </form>
             </div>
         </main>
         <footer>
             <div>
-                <h6>Term | Privacy</h6>
+                <h3>Terms | Privacy</h3>
                 <ul>
-                    <li>Declaration de Confidentialité</li>
-                    <li>Conditions générales</li>
-                    <li>FAQ</li>
+                    <li><a>Privacy</a></li>
+                    <li><a>Generals Conditions</a></li>
+                    <li><a>FAQ</a></li>
                 </ul>
             </div>
             <div>
-                <h6>Follow</h6>
-                <ul>
-                    <li>facebook</li>
-                    <li>Instagram</li>
-                    <li>twiter</li>
-                    <li>twiter</li>
-                    <li>youtube</li>
-                    <li>Linkdin</li>
-                </ul>
+                <h3><a><i class="fa-solid fa-envelope"></i> Contact Us</a></h3>
             </div>
             <div>
-                <h6>Contact</h6>
-                <ul>
-                    <li>incident_alert@info.be</li>
-                    <li>+32 485 34 12 34</li>
-                </ul>
+                <h3>Follow Us</h3>
+                <div class="pagination">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-x-twitter"></i></div>
+                    <div><i class="fa-brands fa-tiktok"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                </div>
             </div>
         </footer>
 <!-- Here be Dragons -->

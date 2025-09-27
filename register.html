@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <!-- Here starts the Extendable Page -->
     <head>
-        <link rel="stylesheet" href="profile.css">
-        <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--link for font-awesome feature-->>
         <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     </head>
-    <body>
+    <body class="background-blue-3">
         <header>
             <div class="nav-break">
                 <div class="logo">
@@ -54,25 +54,24 @@
             </nav>
         </header>
         <main>
-            <div>
-                <div class="profile-image">
-                    <img src="./sample_profile_image.jpg">
-                </div>
-                <div class="info">
-                    <div class="profile-description">
+            <div class="login-box">
+                <form>
+                    <h2>Register</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label for="username">Username</label>
                     </div>
-                    <div class="profile-others-info">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label for="password">Password</label>
                     </div>
-                </div>
-                <button>edit</button>
-            </div>
-            <div class="user-posts">
-                <div class="sample-post-1">
-                </div>
-                <div class="sample-post-2">
-                </div>
-            </div>
-            <div>
+                    <button class="button-auth" type="submit">Register</button>
+                    <div class="register-link">
+                        <p>Already have an account ? <a href="./login.html">Login</a></p>
+                    </div>
+                </form>
             </div>
         </main>
         <footer>
@@ -99,5 +98,6 @@
                 </div>
             </div>
         </footer>
+<!-- Here be Dragons -->
     </body>
 </html>
