@@ -95,7 +95,8 @@ nav .logo a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin-left: auto;
+    margin-right: 10px;
     cursor: pointer;
     color: white;
 }
@@ -179,15 +180,21 @@ nav .logo a {
     }
 
     main{
-        margin-top: 150px;
+        margin-top: 160px;
     }
 
-    nav{
-        justify-content: center;
+
+    .search{
+        width: 100vw;
     }
 
     nav div{
         display: none;
+    }
+
+    nav{
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-break{
@@ -519,3 +526,9 @@ input[type=number] {
     }
 }
 /*end login and register pages*/
+
+/* This empty class should be removed later */
+
+.empty{
+    height: 100vh;
+}
