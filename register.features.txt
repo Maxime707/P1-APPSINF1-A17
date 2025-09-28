@@ -1,0 +1,47 @@
+Feature: Connection as a new user
+ 
+ User are allowed to create an account anytime
+
+Scenario:
+ Given the user's email adress is avalaible
+ And the user's username is avalaible
+ And the user's password meets the required conditions
+ And "Confirm Password" matches "Password"
+ When the user creates an account
+ Then the user receives a confirmation email
+ And should be able to log in using their credentials
+
+Scenario:
+ Given the user enters a used email adress
+ When the user creates an account
+ Then the user should be notified that the adress is already in use
+ And no account is created
+ And the credentials should be cleared
+
+Scenario:
+ Given the user enters a used username
+ when the user creates an account
+ Then the user should be notified that the username is already in use
+ And no account is created
+ And the credentials should be cleared
+
+Scenario:
+ Given the user use an invalid password
+ When the user creates an account
+ Then the user should be notified that the password is invalid
+ And no account is created
+ And the credentials should be cleared
+
+Scenario:
+ Given the user mismatch passwords
+ When the user creates an account
+ Then the user should be notified of the mismatch
+ And no account is created
+ And the credentials should be cleared
+
+Scenario:
+ Given the user has 2 or more invalid criteria
+ When the user creates an account
+ Then the user should be notified of each non-met criteria
+ And no account is created
+ And the credentials should be cleared
