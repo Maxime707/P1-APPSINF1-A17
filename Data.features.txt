@@ -1,0 +1,31 @@
+Feature: Website for UCL
+  As a user,
+  I want to have access to all core functionalities of the website,
+  So that I can search incidents and navigate through paginated results.
+
+
+Scenario : show username and picture 
+    Given I am on the page Incidents page
+    When I want my picture and name to be shown 
+    Whether I am not logged in 
+    Then I should be redirected to the loging page 
+    Whether I logged in succesfully or already 
+    Then I should be able to look at my picture and name on upper right side of the page
+
+Scenario : View incidents 
+    Given I am on the Incidents page
+    Then I should see a bubble with "search" written within
+    When I enter a keyword
+    Then I should be able to search for a specific incident
+    When I should see a paginate numbers within bubbles
+    Then I should be able to go from page to another
+
+Scenario : Report incidents 
+    Given I am on the Incidents page 
+    Then I should see the word "report" within a bubble 
+    When I click on the report bubble
+    Then I should be redirected to a report page
+
+
+    
+    
