@@ -1,0 +1,24 @@
+Scenario: Login as an existing user
+
+ User are allowed to connect if they have an account
+
+Scenario: The user try to log in using a valid credentials
+    Given the user enters a registered email
+    And the user enters the password of the email
+    When the user connects
+    Then the user is connected to their account
+    Then the user is redirected to the main page
+
+ Scenario: The user try to log in using invalid credentials
+    Given the user enters an unregistered email, an unregistered user's name or an incorrect password
+    When the user connects
+    Then the user is notified that their credentials are invalid
+    And the user is not connected
+    And the credentials are discarded
+
+Scenario: The user want the server to remember him at login
+    Given the user asks us to remember him
+    And credentials are correct
+    When the user connects
+    Then the user is connected
+    And will not have to login next time

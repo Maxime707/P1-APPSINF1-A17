@@ -61,7 +61,6 @@ main{
     min-width: 100%;
     height:70px;
     max-width:1200px;
-    margin: 0 auto;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -95,7 +94,8 @@ main{
     transition: 0.17s;
 }
 
-.first-nav .profile, .nav-break .profile{
+.first-nav .profile, 
+.nav-break .profile{
     width: 155px;
     height: 60px;
     border-radius: 30px;
@@ -194,18 +194,18 @@ main{
         margin-top: 160px;
     }
 
-
-    .search{
-        width: 100vw;
-    }
-
-    .first-nav .logo, .first-nav .logo{
+    .first-nav .logo,
+    .first-nav .profile{
         display: none;
     }
 
-    nav{
-        justify-content: center;
+    .search{
+        width: 95vw;
+    }
+
+    .first-nav{
         align-items: center;
+        justify-content: center;
     }
 
     .nav-break{
@@ -360,7 +360,7 @@ footer{
 }
 
 .register-box{
-    height: 600px;
+    height: 650px;
 }
 
 .report-box{

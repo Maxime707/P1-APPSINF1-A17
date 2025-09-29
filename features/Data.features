@@ -4,25 +4,25 @@ Feature: Website for UCL
   So that I can search incidents and navigate through paginated results.
 
 
-Scenario : show username and picture 
+Scenario : show username and user profile picture 
     Given I am on the page Incidents page
     When I want my picture and name to be shown 
-    Whether I am not logged in 
+    And I am not logged in 
     Then I should be redirected to the loging page 
-    Whether I logged in succesfully or already 
-    Then I should be able to look at my picture and name on upper right side of the page
+    When I logged in succesfully or already logged in
+    Then I should be able to look at my profile picture and name on upper right side of the page
 
 Scenario : View incidents 
     Given I am on the Incidents page
-    Then I should see a bubble with "search" written within
+    Then I should see a search bubble
     When I enter a keyword
     Then I should be able to search for a specific incident
     When I should see a paginate numbers within bubbles
     Then I should be able to go from page to another
 
-Scenario : Report incidents 
+Scenario : Report an incident
     Given I am on the Incidents page 
-    Then I should see the word "report" within a bubble 
+    Then I should see a report bubble 
     When I click on the report bubble
     Then I should be redirected to a report page
 
