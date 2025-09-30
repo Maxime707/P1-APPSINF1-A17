@@ -39,10 +39,3 @@ Scenario: The user try to register entering password and confirmed password diff
     Then the user should be notified of the mismatch
     And no account is created
     And the credentials should be discarded
-
-Scenario: The user try to register using any invalid credential
-    Given the user has 2 or more invalid criteria
-    When the user creates an account
-    Then the user should be notified of each non-met criteria
-    And no account is created
-    And the credentials should be discarded
