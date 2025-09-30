@@ -1,24 +1,24 @@
-Scenario: Login as an existing user
+Scenario: Login as an existing citizen
 
- User are allowed to connect if they have an account
+ A citizen is allowed to connect if they have an account
 
-Scenario: The user try to log in using a valid credentials
-    Given the user enters a registered email
-    And the user enters the password of the email
-    When the user connects
-    Then the user is connected to their account
-    Then the user is redirected to the main page
+Scenario: The citizen tries to log in using valid credentials
+    Given the citizen enters a registered email
+    And the citizen enters the password of the email
+    When the citizen connects
+    Then the citizen is connected to their account
+    Then the citizen is redirected to the main page
 
- Scenario: The user try to log in using invalid credentials
-    Given the user enters an unregistered email, an unregistered user's name or an incorrect password
-    When the user connects
-    Then the user is notified that their credentials are invalid
-    And the user is not connected
+ Scenario: The citizen tries to log in using invalid credentials
+    Given the citizen enters an unregistered email, an unregistered username or an incorrect password
+    When the citizen is connected
+    Then the citizen is notified that their credentials are invalid
+    And the citizen is not connected
     And the credentials are discarded
 
-Scenario: The user want the server to remember him at login
-    Given the user asks us to remember him
+Scenario: The citizen wants the server to remember him at login
+    Given the citizen asks us to remember him
     And credentials are correct
-    When the user connects
-    Then the user is connected
+    When the citizen connects
+    Then the citizen is connected
     And will not have to login next time
